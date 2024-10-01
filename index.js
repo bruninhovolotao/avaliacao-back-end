@@ -11,8 +11,8 @@ const PORT = 3000
 app.use(cors())
 app.use(express.json()) 
 
-app.use('./users', usersRouter)
-app.use('./notes', notesRouter)
+app.use('/users', usersRouter)
+app.use('/notes', notesRouter)
 
 
 app.listen(PORT, () =>{ 
