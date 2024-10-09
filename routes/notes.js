@@ -89,5 +89,27 @@ router.put('/massage/:id', (request, response) => {
 
 })
 
+// Rota para deletar de mensagem
+router.delete('/massage/:id', (request, response) => {
+    const {id} = request.body
+
+    // Filtra os ids para verificação
+    const messageId = notes.findIndex(note => note.id === id); 
+    
+    // Retorna a mensagem se o id não for encontrado
+    if(messageId === -1){    
+        return response.status(404).json({
+            message: 'Mensagem não encontrada, verifique o identificador em nosso banco'
+        })
+    }
+
+    const [deleteMessage] = notes.splice(messageId, 1);
+
+    return response.status(200).json({
+        message: 'Mensagem apagada com sucesso',
+        note: deleteMessage
+    })
+
+})
 
 export default router
