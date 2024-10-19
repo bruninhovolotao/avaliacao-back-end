@@ -1,0 +1,56 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+    width: 50%;
+}
+.title{
+    padding: 10px;
+}
+.title label{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.title input{
+    width: 100%;
+    display: block;
+    height: 30px;
+}
+
+
+.email{
+    padding: 10px;
+}
+.email label{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.email input{
+    width: 100%;
+    display: block;
+    height: 30px;
+}
+
+.description{
+    padding: 10px;
+}
+.description label{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+.description textarea{
+    width: 100%;
+    display: block;
+    height: 150px;
+}
+.submit{
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+}
